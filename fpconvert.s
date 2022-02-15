@@ -5,7 +5,7 @@
     .syntax unified //modern syntax
 
 //definitions applying to the entire source file
-    //.equ MASK, 0xff
+    //.equ EXAMPLE_DEF, 0xff
 
     //.data         //uncomment if needed
 
@@ -28,6 +28,8 @@ fpconvert:
 // YOUR CODE GOES IN THE SECTION BELOW
 // ==========================================================================
 
+
+
 // ==========================================================================
 // function epilogue - do not edit
     sub	sp, fp, FP_OFF
@@ -36,6 +38,7 @@ fpconvert:
 
 // function footer
     .size fpconvert, (. - fpconvert) // set size for function
+
 // ==========================================================================
 
     .global convert_infinity
@@ -57,6 +60,8 @@ convert_infinity:
 // ==========================================================================
 // YOUR CODE GOES IN THE SECTION BELOW
 // ==========================================================================
+
+
 
 // ==========================================================================
 // function epilogue (do not edit)
