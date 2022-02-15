@@ -39,8 +39,9 @@ int main(int argc, char *argv[])
      */
     while (fread(&fp_number, sizeof(fp_number), 1, infile)){
         cnvrt_num.i = fpconvert((uint32_t)fp_number);
+        printf("%04x\t", fp_number);
         printf("%08x\t", cnvrt_num.i);
-        printf("%36.30f\n", cnvrt_num.f);
+        printf("%16.10g\n", cnvrt_num.f);
     }
 
     fclose(infile);
