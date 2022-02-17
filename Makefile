@@ -21,7 +21,7 @@ ASLIST = -Wa,-adhln
 ASFLAGS = -I.
 
 %.o : %.s
-	$(AS) -c $(ASFLAGS) $< -o $@
+	$(AS) -c $(ASFLAGS) $(DEBUG) $< -o $@
 
 .PHONY: clean
 
